@@ -14,23 +14,6 @@ struct ContentView<VM: SearchPhotosViewModelInput & SearchPhotosViewModelOutput>
     
     var body: some View {
         Text("Hello")
-            .task {
-//                self.viewModel.didSearch(tag: "Electrolux")
-            }
-//        NavigationView {
-//            ScrollView {
-//                LazyVGrid(columns: columns, alignment: .leading, spacing: 16) {
-//                    ForEach(viewModel.items, id: \.uniqueID) { item in
-//                        GridView()
-//                        .frame(height: height)
-//                    }
-//                }.task {
-////                    self.viewModel.fetchMovies()
-//                }
-//                .padding()
-//                .searchable(text: $searchText)
-//                .navigationTitle("Searchable Example")
-//        }
     }
 }
 

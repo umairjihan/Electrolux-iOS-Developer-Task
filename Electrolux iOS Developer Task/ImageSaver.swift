@@ -16,14 +16,27 @@ class ImageSaver: NSObject {
     
     var delegate: ImageSaverDelegate? = nil
     
-    func writeToPhotoAlbum(image: UIImage) {
-        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
+    private var images: [UIImage] = []
+    
+    func writeToPhotoAlbum(images: [UIImage]) {
+        self.images = images
+        if let image = self.images.first {
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
+        }
+        self.images.removeFirst()
     }
 
     @objc func saveCompleted(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        print("Save finished!")
+
+        if self.images.isEmpty {
+            self.delegate?.saveCompleted()
+        }
         
-        self.delegate?.saveCompleted()
+        if let imagee = self.images.first {
+            UIImageWriteToSavedPhotosAlbum(imagee, self, #selector(saveCompleted), nil)
+            self.images.removeFirst()
+        }
+        
     }
 }
 

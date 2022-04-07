@@ -11,9 +11,7 @@ struct SearchPhotosView<VM: SearchPhotosViewModelInput & SearchPhotosViewModelOu
     
     @StateObject var viewModel: VM
     
-    @State private var selectedImage: UIImage?
-    
-    @State private var selectedItemIndex: Int? = nil
+    @State private var selectedImages: [UIImage] = []
     
     @State private var showingAlert = false
     
@@ -25,17 +23,17 @@ struct SearchPhotosView<VM: SearchPhotosViewModelInput & SearchPhotosViewModelOu
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns, alignment: .center, spacing: 10) {
-                    ForEach(viewModel.items.indices, id: \.self) { index in
-                        if viewModel.shouldFetchNextPage(item: viewModel.items[index]) {
-                            PhotosGridView(viewModel: viewModel.items[index], didSelect : {  image in
-                                self.didSelectImage(index: index, image: image)
+                    ForEach(viewModel.items, id: \.uniqueID) { item in
+                        if viewModel.shouldFetchNextPage(item: item) {
+                            PhotosGridView(viewModel: item, didSelect : {  image in
+                                self.didSelectImage(image: image)
                             })
                             .task {
                                 self.viewModel.didLoadNextPage()
                             }
                         }else{
-                            PhotosGridView(viewModel: viewModel.items[index], didSelect : {  image in
-                                self.didSelectImage(index: index, image: image)
+                            PhotosGridView(viewModel: item, didSelect : {  image in
+                                self.didSelectImage(image: image)
                             })
                         }
                     }
@@ -44,7 +42,7 @@ struct SearchPhotosView<VM: SearchPhotosViewModelInput & SearchPhotosViewModelOu
                 .navigationBarTitle("Flickr Phoos", displayMode: .inline)
                 .toolbar {
                     Button("Save") {
-                        self.saveImageToGallery()
+                        self.saveCompleted()
                     }
                 }
                 .alert("Image is saved to gallery", isPresented: $showingAlert) {
@@ -61,24 +59,19 @@ struct SearchPhotosView<VM: SearchPhotosViewModelInput & SearchPhotosViewModelOu
     }
     
     
-    private func didSelectImage(index: Int, image : UIImage){
-        if let selectedItemIndex = self.selectedItemIndex {
-            self.viewModel.items[selectedItemIndex].isSelected = false
-        }
-        if let selectedImage = self.selectedImage, selectedImage.isEqual(image) {
-            self.selectedImage = nil
-            self.selectedItemIndex = nil
+    private func didSelectImage( image : UIImage){
+        if let  containIndex = selectedImages.firstIndex(of: image) {
+            self.selectedImages.remove(at: containIndex)
         }else {
-            self.selectedImage = image
-            self.selectedItemIndex = index
+            self.selectedImages.append(image)
         }
     }
     
     private func saveImageToGallery(){
-        if let selectedImage = self.selectedImage {
+        if !self.selectedImages.isEmpty {
             let imageSaver = ImageSaver()
             imageSaver.delegate = self
-            imageSaver.writeToPhotoAlbum(image: selectedImage)
+            imageSaver.writeToPhotoAlbum(images: self.selectedImages)
         }
     }
 }
@@ -87,9 +80,8 @@ struct SearchPhotosView<VM: SearchPhotosViewModelInput & SearchPhotosViewModelOu
 extension SearchPhotosView: ImageSaverDelegate {
     
     func saveCompleted() {
-        selectedImage = nil
-        if let selectedItemIndex = self.selectedItemIndex {
-            self.viewModel.items[selectedItemIndex].isSelected = false
+        self.viewModel.items.forEach { item in
+            item.isSelected = false
         }
         self.showingAlert = true
     }

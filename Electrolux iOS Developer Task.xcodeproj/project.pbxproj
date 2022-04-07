@@ -108,6 +108,7 @@
 		C43E5CAB27FCC9E5008AB6C9 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		C43E5CAF27FCF22B008AB6C9 /* SearchPhotosUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosUseCaseTests.swift; sourceTree = "<group>"; };
 		C459E24A27FF7EF800F7ADD0 /* SearchPhotosViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosViewModelTests.swift; sourceTree = "<group>"; };
+		C459E24C27FFA42900F7ADD0 /* Electrolux-iOS-Developer-Task-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Electrolux-iOS-Developer-Task-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E23B70BE6AD1DB85445314F9 /* Pods_Electrolux_iOS_Developer_Task_Electrolux_iOS_Developer_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Electrolux_iOS_Developer_Task_Electrolux_iOS_Developer_TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A6DEE272E7E81004181533 /* Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +179,7 @@
 		C420F97F27FA675D00CB589C /* Electrolux iOS Developer Task */ = {
 			isa = PBXGroup;
 			children = (
+				C459E24C27FFA42900F7ADD0 /* Electrolux-iOS-Developer-Task-Info.plist */,
 				C420F9AE27FB35A200CB589C /* Domain */,
 				C420F9B027FB360100CB589C /* Presentation */,
 				C420F9AF27FB35F600CB589C /* Data */,
@@ -869,6 +871,7 @@
 				DEVELOPMENT_TEAM = QAQNH4S28N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Electrolux-iOS-Developer-Task-Info.plist";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Application needs permission to write photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -900,6 +903,7 @@
 				DEVELOPMENT_TEAM = QAQNH4S28N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Electrolux-iOS-Developer-Task-Info.plist";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Application needs permission to write photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

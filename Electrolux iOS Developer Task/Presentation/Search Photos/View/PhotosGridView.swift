@@ -16,8 +16,6 @@ struct PhotosGridView <VM: SearchPhotoItemViewModelOutput> : View {
 
     let didSelect: (UIImage) -> Void
     
-//    @State var isSelected = false
-    
     var body: some View {
         Button(action: {
             guard let image = self.image else { return }
