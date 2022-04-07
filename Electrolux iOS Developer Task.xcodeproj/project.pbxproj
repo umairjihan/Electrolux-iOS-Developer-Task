@@ -1,0 +1,1046 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BCDD8B14ACBDCBBF02CF95D /* Pods_Electrolux_iOS_Developer_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72234947AB7A466024D8EB29 /* Pods_Electrolux_iOS_Developer_Task.framework */; };
+		7E4957DAFB31BD52EED936F7 /* Pods_Electrolux_iOS_Developer_Task_Electrolux_iOS_Developer_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23B70BE6AD1DB85445314F9 /* Pods_Electrolux_iOS_Developer_Task_Electrolux_iOS_Developer_TaskUITests.framework */; };
+		C3FCD4D4E5D6CAD66C801E03 /* Pods_Electrolux_iOS_Developer_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641611FF5B5D15C526B62124 /* Pods_Electrolux_iOS_Developer_TaskTests.framework */; };
+		C420F98127FA675D00CB589C /* Electrolux_iOS_Developer_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F98027FA675D00CB589C /* Electrolux_iOS_Developer_TaskApp.swift */; };
+		C420F98327FA675D00CB589C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F98227FA675D00CB589C /* ContentView.swift */; };
+		C420F98527FA675E00CB589C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C420F98427FA675E00CB589C /* Assets.xcassets */; };
+		C420F98827FA675E00CB589C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C420F98727FA675E00CB589C /* Preview Assets.xcassets */; };
+		C420F99227FA675E00CB589C /* Electrolux_iOS_Developer_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F99127FA675E00CB589C /* Electrolux_iOS_Developer_TaskTests.swift */; };
+		C420F99C27FA675E00CB589C /* Electrolux_iOS_Developer_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F99B27FA675E00CB589C /* Electrolux_iOS_Developer_TaskUITests.swift */; };
+		C420F99E27FA675E00CB589C /* Electrolux_iOS_Developer_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F99D27FA675E00CB589C /* Electrolux_iOS_Developer_TaskUITestsLaunchTests.swift */; };
+		C420F9AB27FA6A9E00CB589C /* PhotosGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9AA27FA6A9E00CB589C /* PhotosGridView.swift */; };
+		C420F9AD27FAF2F000CB589C /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9AC27FAF2F000CB589C /* Photos.swift */; };
+		C420F9B927FB70CD00CB589C /* BaseNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9B827FB70CD00CB589C /* BaseNetworking.swift */; };
+		C420F9BB27FB722500CB589C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9BA27FB722500CB589C /* API.swift */; };
+		C420F9BE27FB725100CB589C /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9BD27FB725100CB589C /* AppEnvironment.swift */; };
+		C420F9C127FB728E00CB589C /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9C027FB728E00CB589C /* Environment.swift */; };
+		C420F9C327FB72D100CB589C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9C227FB72D100CB589C /* Response.swift */; };
+		C420F9C627FB72FF00CB589C /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9C527FB72FF00CB589C /* ErrorResponse.swift */; };
+		C420F9C927FB745600CB589C /* SearchPhotosRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9C827FB745600CB589C /* SearchPhotosRequest.swift */; };
+		C420F9CB27FB75B600CB589C /* SearchPhotosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9CA27FB75B600CB589C /* SearchPhotosUseCase.swift */; };
+		C420F9CD27FB75DA00CB589C /* SearchPhotosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9CC27FB75DA00CB589C /* SearchPhotosRepository.swift */; };
+		C420F9CF27FB787900CB589C /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9CE27FB787900CB589C /* UseCase.swift */; };
+		C420F9D527FB79F900CB589C /* SearchPhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9D427FB79F900CB589C /* SearchPhotosDataSource.swift */; };
+		C420F9D727FB7A8300CB589C /* SearchPhotosRepositoryIMPL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9D627FB7A8300CB589C /* SearchPhotosRepositoryIMPL.swift */; };
+		C420F9D927FB7B0E00CB589C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9D827FB7B0E00CB589C /* Constants.swift */; };
+		C420F9DB27FB7CA400CB589C /* SearchPhotosRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9DA27FB7CA400CB589C /* SearchPhotosRemoteService.swift */; };
+		C420F9DD27FB7D5000CB589C /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9DC27FB7D5000CB589C /* CodableExtension.swift */; };
+		C420F9DF27FB7D9600CB589C /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9DE27FB7D9600CB589C /* EndPoints.swift */; };
+		C420F9E427FB85A700CB589C /* SearchPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9E327FB85A700CB589C /* SearchPhotosViewModel.swift */; };
+		C420F9E627FB898400CB589C /* SearchPhotoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9E527FB898400CB589C /* SearchPhotoItemViewModel.swift */; };
+		C420F9E827FB9AAF00CB589C /* SearchPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9E727FB9AAF00CB589C /* SearchPhotosView.swift */; };
+		C420F9EA27FBC33200CB589C /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9E927FBC33200CB589C /* ViewExtension.swift */; };
+		C420F9EC27FBC70600CB589C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420F9EB27FBC70600CB589C /* StringExtension.swift */; };
+		C43E5CAA27FC6959008AB6C9 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E5CA927FC6959008AB6C9 /* ImageSaver.swift */; };
+		C43E5CAC27FCC9E5008AB6C9 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E5CAB27FCC9E5008AB6C9 /* UIApplicationExtensions.swift */; };
+		C43E5CB027FCF22B008AB6C9 /* SearchPhotosUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E5CAF27FCF22B008AB6C9 /* SearchPhotosUseCaseTests.swift */; };
+		C459E24B27FF7EF800F7ADD0 /* SearchPhotosViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C459E24A27FF7EF800F7ADD0 /* SearchPhotosViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C420F98E27FA675E00CB589C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C420F97527FA675C00CB589C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C420F97C27FA675D00CB589C;
+			remoteInfo = "Electrolux iOS Developer Task";
+		};
+		C420F99827FA675E00CB589C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C420F97527FA675C00CB589C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C420F97C27FA675D00CB589C;
+			remoteInfo = "Electrolux iOS Developer Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		236222D763761ED42C55C0C4 /* Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D305D7C3CE95978CDA98ACE /* Pods-Electrolux iOS Developer TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux iOS Developer TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Electrolux iOS Developer TaskTests/Pods-Electrolux iOS Developer TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		641611FF5B5D15C526B62124 /* Pods_Electrolux_iOS_Developer_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Electrolux_iOS_Developer_TaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72234947AB7A466024D8EB29 /* Pods_Electrolux_iOS_Developer_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Electrolux_iOS_Developer_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		876048463D2B3B2D9AC2EF96 /* Pods-Electrolux iOS Developer TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux iOS Developer TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Electrolux iOS Developer TaskTests/Pods-Electrolux iOS Developer TaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		889F28C2D8623B31E49A6DAD /* Pods-Electrolux iOS Developer Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux iOS Developer Task.debug.xcconfig"; path = "Target Support Files/Pods-Electrolux iOS Developer Task/Pods-Electrolux iOS Developer Task.debug.xcconfig"; sourceTree = "<group>"; };
+		AA8A8C8D344C914E889D7875 /* Pods-Electrolux iOS Developer Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux iOS Developer Task.release.xcconfig"; path = "Target Support Files/Pods-Electrolux iOS Developer Task/Pods-Electrolux iOS Developer Task.release.xcconfig"; sourceTree = "<group>"; };
+		C420F97D27FA675D00CB589C /* Electrolux iOS Developer Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Electrolux iOS Developer Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C420F98027FA675D00CB589C /* Electrolux_iOS_Developer_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electrolux_iOS_Developer_TaskApp.swift; sourceTree = "<group>"; };
+		C420F98227FA675D00CB589C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C420F98427FA675E00CB589C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C420F98727FA675E00CB589C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C420F98D27FA675E00CB589C /* Electrolux iOS Developer TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Electrolux iOS Developer TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C420F99127FA675E00CB589C /* Electrolux_iOS_Developer_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electrolux_iOS_Developer_TaskTests.swift; sourceTree = "<group>"; };
+		C420F99727FA675E00CB589C /* Electrolux iOS Developer TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Electrolux iOS Developer TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C420F99B27FA675E00CB589C /* Electrolux_iOS_Developer_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electrolux_iOS_Developer_TaskUITests.swift; sourceTree = "<group>"; };
+		C420F99D27FA675E00CB589C /* Electrolux_iOS_Developer_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electrolux_iOS_Developer_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C420F9AA27FA6A9E00CB589C /* PhotosGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGridView.swift; sourceTree = "<group>"; };
+		C420F9AC27FAF2F000CB589C /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		C420F9B827FB70CD00CB589C /* BaseNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworking.swift; sourceTree = "<group>"; };
+		C420F9BA27FB722500CB589C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C420F9BD27FB725100CB589C /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		C420F9C027FB728E00CB589C /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		C420F9C227FB72D100CB589C /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		C420F9C527FB72FF00CB589C /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		C420F9C827FB745600CB589C /* SearchPhotosRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosRequest.swift; sourceTree = "<group>"; };
+		C420F9CA27FB75B600CB589C /* SearchPhotosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosUseCase.swift; sourceTree = "<group>"; };
+		C420F9CC27FB75DA00CB589C /* SearchPhotosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosRepository.swift; sourceTree = "<group>"; };
+		C420F9CE27FB787900CB589C /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		C420F9D427FB79F900CB589C /* SearchPhotosDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosDataSource.swift; sourceTree = "<group>"; };
+		C420F9D627FB7A8300CB589C /* SearchPhotosRepositoryIMPL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosRepositoryIMPL.swift; sourceTree = "<group>"; };
+		C420F9D827FB7B0E00CB589C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C420F9DA27FB7CA400CB589C /* SearchPhotosRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosRemoteService.swift; sourceTree = "<group>"; };
+		C420F9DC27FB7D5000CB589C /* CodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtension.swift; sourceTree = "<group>"; };
+		C420F9DE27FB7D9600CB589C /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		C420F9E327FB85A700CB589C /* SearchPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosViewModel.swift; sourceTree = "<group>"; };
+		C420F9E527FB898400CB589C /* SearchPhotoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotoItemViewModel.swift; sourceTree = "<group>"; };
+		C420F9E727FB9AAF00CB589C /* SearchPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosView.swift; sourceTree = "<group>"; };
+		C420F9E927FBC33200CB589C /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		C420F9EB27FBC70600CB589C /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C43E5CA927FC6959008AB6C9 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		C43E5CAB27FCC9E5008AB6C9 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		C43E5CAF27FCF22B008AB6C9 /* SearchPhotosUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosUseCaseTests.swift; sourceTree = "<group>"; };
+		C459E24A27FF7EF800F7ADD0 /* SearchPhotosViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosViewModelTests.swift; sourceTree = "<group>"; };
+		E23B70BE6AD1DB85445314F9 /* Pods_Electrolux_iOS_Developer_Task_Electrolux_iOS_Developer_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Electrolux_iOS_Developer_Task_Electrolux_iOS_Developer_TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A6DEE272E7E81004181533 /* Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C420F97A27FA675D00CB589C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCDD8B14ACBDCBBF02CF95D /* Pods_Electrolux_iOS_Developer_Task.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420F98A27FA675E00CB589C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FCD4D4E5D6CAD66C801E03 /* Pods_Electrolux_iOS_Developer_TaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420F99427FA675E00CB589C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4957DAFB31BD52EED936F7 /* Pods_Electrolux_iOS_Developer_Task_Electrolux_iOS_Developer_TaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7624CA2AB2C7D0948C5C63EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				889F28C2D8623B31E49A6DAD /* Pods-Electrolux iOS Developer Task.debug.xcconfig */,
+				AA8A8C8D344C914E889D7875 /* Pods-Electrolux iOS Developer Task.release.xcconfig */,
+				E5A6DEE272E7E81004181533 /* Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.debug.xcconfig */,
+				236222D763761ED42C55C0C4 /* Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.release.xcconfig */,
+				5D305D7C3CE95978CDA98ACE /* Pods-Electrolux iOS Developer TaskTests.debug.xcconfig */,
+				876048463D2B3B2D9AC2EF96 /* Pods-Electrolux iOS Developer TaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C420F97427FA675C00CB589C = {
+			isa = PBXGroup;
+			children = (
+				C420F97F27FA675D00CB589C /* Electrolux iOS Developer Task */,
+				C420F99027FA675E00CB589C /* Electrolux iOS Developer TaskTests */,
+				C420F99A27FA675E00CB589C /* Electrolux iOS Developer TaskUITests */,
+				C420F97E27FA675D00CB589C /* Products */,
+				7624CA2AB2C7D0948C5C63EC /* Pods */,
+				E9985A019E5E8042E0F8687C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C420F97E27FA675D00CB589C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C420F97D27FA675D00CB589C /* Electrolux iOS Developer Task.app */,
+				C420F98D27FA675E00CB589C /* Electrolux iOS Developer TaskTests.xctest */,
+				C420F99727FA675E00CB589C /* Electrolux iOS Developer TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C420F97F27FA675D00CB589C /* Electrolux iOS Developer Task */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9AE27FB35A200CB589C /* Domain */,
+				C420F9B027FB360100CB589C /* Presentation */,
+				C420F9AF27FB35F600CB589C /* Data */,
+				C420F9B127FB360B00CB589C /* Infrastructure */,
+				C420F9B227FB361500CB589C /* Extensions */,
+				C420F9B327FB362100CB589C /* Resources */,
+				C420F98027FA675D00CB589C /* Electrolux_iOS_Developer_TaskApp.swift */,
+				C420F98227FA675D00CB589C /* ContentView.swift */,
+				C420F98427FA675E00CB589C /* Assets.xcassets */,
+				C420F98627FA675E00CB589C /* Preview Content */,
+				C420F9BD27FB725100CB589C /* AppEnvironment.swift */,
+				C43E5CA927FC6959008AB6C9 /* ImageSaver.swift */,
+			);
+			path = "Electrolux iOS Developer Task";
+			sourceTree = "<group>";
+		};
+		C420F98627FA675E00CB589C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C420F98727FA675E00CB589C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C420F99027FA675E00CB589C /* Electrolux iOS Developer TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				C459E24827FF7EB500F7ADD0 /* Presentation */,
+				C43E5CAD27FCF10A008AB6C9 /* Domain */,
+				C420F99127FA675E00CB589C /* Electrolux_iOS_Developer_TaskTests.swift */,
+			);
+			path = "Electrolux iOS Developer TaskTests";
+			sourceTree = "<group>";
+		};
+		C420F99A27FA675E00CB589C /* Electrolux iOS Developer TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C420F99B27FA675E00CB589C /* Electrolux_iOS_Developer_TaskUITests.swift */,
+				C420F99D27FA675E00CB589C /* Electrolux_iOS_Developer_TaskUITestsLaunchTests.swift */,
+			);
+			path = "Electrolux iOS Developer TaskUITests";
+			sourceTree = "<group>";
+		};
+		C420F9AE27FB35A200CB589C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9B527FB685300CB589C /* UseCase */,
+				C420F9B627FB686700CB589C /* Repository */,
+				C420F9B427FB378F00CB589C /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C420F9AF27FB35F600CB589C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9D227FB795600CB589C /* Remote */,
+				C420F9D127FB794600CB589C /* Repository */,
+				C420F9D027FB793800CB589C /* DataSource */,
+				C420F9DE27FB7D9600CB589C /* EndPoints.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C420F9B027FB360100CB589C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9E027FB84BC00CB589C /* Search Photos */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C420F9B127FB360B00CB589C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9BF27FB727900CB589C /* Enums */,
+				C420F9B727FB70B500CB589C /* Networking */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		C420F9B227FB361500CB589C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9DC27FB7D5000CB589C /* CodableExtension.swift */,
+				C420F9E927FBC33200CB589C /* ViewExtension.swift */,
+				C420F9EB27FBC70600CB589C /* StringExtension.swift */,
+				C43E5CAB27FCC9E5008AB6C9 /* UIApplicationExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C420F9B327FB362100CB589C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9D827FB7B0E00CB589C /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C420F9B427FB378F00CB589C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9C727FB73E900CB589C /* Request */,
+				C420F9C427FB72EE00CB589C /* Response */,
+				C420F9C227FB72D100CB589C /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C420F9B527FB685300CB589C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9CA27FB75B600CB589C /* SearchPhotosUseCase.swift */,
+				C420F9CE27FB787900CB589C /* UseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C420F9B627FB686700CB589C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9CC27FB75DA00CB589C /* SearchPhotosRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C420F9B727FB70B500CB589C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9B827FB70CD00CB589C /* BaseNetworking.swift */,
+				C420F9BA27FB722500CB589C /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C420F9BF27FB727900CB589C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9C027FB728E00CB589C /* Environment.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		C420F9C427FB72EE00CB589C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9AC27FAF2F000CB589C /* Photos.swift */,
+				C420F9C527FB72FF00CB589C /* ErrorResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C420F9C727FB73E900CB589C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9C827FB745600CB589C /* SearchPhotosRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C420F9D027FB793800CB589C /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9D427FB79F900CB589C /* SearchPhotosDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		C420F9D127FB794600CB589C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9D627FB7A8300CB589C /* SearchPhotosRepositoryIMPL.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C420F9D227FB795600CB589C /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9D327FB796E00CB589C /* Services */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		C420F9D327FB796E00CB589C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9DA27FB7CA400CB589C /* SearchPhotosRemoteService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C420F9E027FB84BC00CB589C /* Search Photos */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9E227FB84DC00CB589C /* ViewModel */,
+				C420F9E127FB84D300CB589C /* View */,
+			);
+			path = "Search Photos";
+			sourceTree = "<group>";
+		};
+		C420F9E127FB84D300CB589C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9E727FB9AAF00CB589C /* SearchPhotosView.swift */,
+				C420F9AA27FA6A9E00CB589C /* PhotosGridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C420F9E227FB84DC00CB589C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C420F9E327FB85A700CB589C /* SearchPhotosViewModel.swift */,
+				C420F9E527FB898400CB589C /* SearchPhotoItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C43E5CAD27FCF10A008AB6C9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C43E5CAE27FCF12D008AB6C9 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C43E5CAE27FCF12D008AB6C9 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				C43E5CAF27FCF22B008AB6C9 /* SearchPhotosUseCaseTests.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C459E24827FF7EB500F7ADD0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C459E24927FF7EC900F7ADD0 /* Search Photos */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C459E24927FF7EC900F7ADD0 /* Search Photos */ = {
+			isa = PBXGroup;
+			children = (
+				C459E24A27FF7EF800F7ADD0 /* SearchPhotosViewModelTests.swift */,
+			);
+			path = "Search Photos";
+			sourceTree = "<group>";
+		};
+		E9985A019E5E8042E0F8687C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72234947AB7A466024D8EB29 /* Pods_Electrolux_iOS_Developer_Task.framework */,
+				E23B70BE6AD1DB85445314F9 /* Pods_Electrolux_iOS_Developer_Task_Electrolux_iOS_Developer_TaskUITests.framework */,
+				641611FF5B5D15C526B62124 /* Pods_Electrolux_iOS_Developer_TaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C420F97C27FA675D00CB589C /* Electrolux iOS Developer Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C420F9A127FA675E00CB589C /* Build configuration list for PBXNativeTarget "Electrolux iOS Developer Task" */;
+			buildPhases = (
+				49E5FE0BDB1F36FA4BC6320B /* [CP] Check Pods Manifest.lock */,
+				C420F97927FA675D00CB589C /* Sources */,
+				C420F97A27FA675D00CB589C /* Frameworks */,
+				C420F97B27FA675D00CB589C /* Resources */,
+				18F85C9E7CC0A6661EF78AF5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Electrolux iOS Developer Task";
+			productName = "Electrolux iOS Developer Task";
+			productReference = C420F97D27FA675D00CB589C /* Electrolux iOS Developer Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C420F98C27FA675E00CB589C /* Electrolux iOS Developer TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C420F9A427FA675E00CB589C /* Build configuration list for PBXNativeTarget "Electrolux iOS Developer TaskTests" */;
+			buildPhases = (
+				C3A1AFFA286AD145235AC4EB /* [CP] Check Pods Manifest.lock */,
+				C420F98927FA675E00CB589C /* Sources */,
+				C420F98A27FA675E00CB589C /* Frameworks */,
+				C420F98B27FA675E00CB589C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C420F98F27FA675E00CB589C /* PBXTargetDependency */,
+			);
+			name = "Electrolux iOS Developer TaskTests";
+			productName = "Electrolux iOS Developer TaskTests";
+			productReference = C420F98D27FA675E00CB589C /* Electrolux iOS Developer TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C420F99627FA675E00CB589C /* Electrolux iOS Developer TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C420F9A727FA675E00CB589C /* Build configuration list for PBXNativeTarget "Electrolux iOS Developer TaskUITests" */;
+			buildPhases = (
+				C376F7CAE526D32C41879D52 /* [CP] Check Pods Manifest.lock */,
+				C420F99327FA675E00CB589C /* Sources */,
+				C420F99427FA675E00CB589C /* Frameworks */,
+				C420F99527FA675E00CB589C /* Resources */,
+				BC9ACF39F4CAB9C9325320A1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C420F99927FA675E00CB589C /* PBXTargetDependency */,
+			);
+			name = "Electrolux iOS Developer TaskUITests";
+			productName = "Electrolux iOS Developer TaskUITests";
+			productReference = C420F99727FA675E00CB589C /* Electrolux iOS Developer TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C420F97527FA675C00CB589C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					C420F97C27FA675D00CB589C = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					C420F98C27FA675E00CB589C = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = C420F97C27FA675D00CB589C;
+					};
+					C420F99627FA675E00CB589C = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = C420F97C27FA675D00CB589C;
+					};
+				};
+			};
+			buildConfigurationList = C420F97827FA675C00CB589C /* Build configuration list for PBXProject "Electrolux iOS Developer Task" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C420F97427FA675C00CB589C;
+			productRefGroup = C420F97E27FA675D00CB589C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C420F97C27FA675D00CB589C /* Electrolux iOS Developer Task */,
+				C420F98C27FA675E00CB589C /* Electrolux iOS Developer TaskTests */,
+				C420F99627FA675E00CB589C /* Electrolux iOS Developer TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C420F97B27FA675D00CB589C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C420F98827FA675E00CB589C /* Preview Assets.xcassets in Resources */,
+				C420F98527FA675E00CB589C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420F98B27FA675E00CB589C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420F99527FA675E00CB589C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18F85C9E7CC0A6661EF78AF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electrolux iOS Developer Task/Pods-Electrolux iOS Developer Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electrolux iOS Developer Task/Pods-Electrolux iOS Developer Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Electrolux iOS Developer Task/Pods-Electrolux iOS Developer Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49E5FE0BDB1F36FA4BC6320B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Electrolux iOS Developer Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9ACF39F4CAB9C9325320A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C376F7CAE526D32C41879D52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3A1AFFA286AD145235AC4EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Electrolux iOS Developer TaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C420F97927FA675D00CB589C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43E5CAC27FCC9E5008AB6C9 /* UIApplicationExtensions.swift in Sources */,
+				C420F9D527FB79F900CB589C /* SearchPhotosDataSource.swift in Sources */,
+				C420F9D927FB7B0E00CB589C /* Constants.swift in Sources */,
+				C420F9BE27FB725100CB589C /* AppEnvironment.swift in Sources */,
+				C420F9C127FB728E00CB589C /* Environment.swift in Sources */,
+				C420F9AD27FAF2F000CB589C /* Photos.swift in Sources */,
+				C420F9DD27FB7D5000CB589C /* CodableExtension.swift in Sources */,
+				C420F9EA27FBC33200CB589C /* ViewExtension.swift in Sources */,
+				C420F9EC27FBC70600CB589C /* StringExtension.swift in Sources */,
+				C420F9DF27FB7D9600CB589C /* EndPoints.swift in Sources */,
+				C420F98327FA675D00CB589C /* ContentView.swift in Sources */,
+				C420F9E627FB898400CB589C /* SearchPhotoItemViewModel.swift in Sources */,
+				C420F9C327FB72D100CB589C /* Response.swift in Sources */,
+				C420F9C627FB72FF00CB589C /* ErrorResponse.swift in Sources */,
+				C420F9AB27FA6A9E00CB589C /* PhotosGridView.swift in Sources */,
+				C420F9C927FB745600CB589C /* SearchPhotosRequest.swift in Sources */,
+				C420F9CB27FB75B600CB589C /* SearchPhotosUseCase.swift in Sources */,
+				C420F9E427FB85A700CB589C /* SearchPhotosViewModel.swift in Sources */,
+				C420F9CD27FB75DA00CB589C /* SearchPhotosRepository.swift in Sources */,
+				C420F9DB27FB7CA400CB589C /* SearchPhotosRemoteService.swift in Sources */,
+				C420F9B927FB70CD00CB589C /* BaseNetworking.swift in Sources */,
+				C420F9E827FB9AAF00CB589C /* SearchPhotosView.swift in Sources */,
+				C420F9D727FB7A8300CB589C /* SearchPhotosRepositoryIMPL.swift in Sources */,
+				C420F9CF27FB787900CB589C /* UseCase.swift in Sources */,
+				C43E5CAA27FC6959008AB6C9 /* ImageSaver.swift in Sources */,
+				C420F9BB27FB722500CB589C /* API.swift in Sources */,
+				C420F98127FA675D00CB589C /* Electrolux_iOS_Developer_TaskApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420F98927FA675E00CB589C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43E5CB027FCF22B008AB6C9 /* SearchPhotosUseCaseTests.swift in Sources */,
+				C459E24B27FF7EF800F7ADD0 /* SearchPhotosViewModelTests.swift in Sources */,
+				C420F99227FA675E00CB589C /* Electrolux_iOS_Developer_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420F99327FA675E00CB589C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C420F99C27FA675E00CB589C /* Electrolux_iOS_Developer_TaskUITests.swift in Sources */,
+				C420F99E27FA675E00CB589C /* Electrolux_iOS_Developer_TaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C420F98F27FA675E00CB589C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C420F97C27FA675D00CB589C /* Electrolux iOS Developer Task */;
+			targetProxy = C420F98E27FA675E00CB589C /* PBXContainerItemProxy */;
+		};
+		C420F99927FA675E00CB589C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C420F97C27FA675D00CB589C /* Electrolux iOS Developer Task */;
+			targetProxy = C420F99827FA675E00CB589C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C420F99F27FA675E00CB589C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C420F9A027FA675E00CB589C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C420F9A227FA675E00CB589C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 889F28C2D8623B31E49A6DAD /* Pods-Electrolux iOS Developer Task.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Electrolux iOS Developer Task/Preview Content\"";
+				DEVELOPMENT_TEAM = QAQNH4S28N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Application needs permission to write photos";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umairjihan.ios.Electrolux-iOS-Developer-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C420F9A327FA675E00CB589C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8A8C8D344C914E889D7875 /* Pods-Electrolux iOS Developer Task.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Electrolux iOS Developer Task/Preview Content\"";
+				DEVELOPMENT_TEAM = QAQNH4S28N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Application needs permission to write photos";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umairjihan.ios.Electrolux-iOS-Developer-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C420F9A527FA675E00CB589C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D305D7C3CE95978CDA98ACE /* Pods-Electrolux iOS Developer TaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAQNH4S28N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Application needs permission to write photos";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umairjihan.ios.Electrolux-iOS-Developer-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Electrolux iOS Developer Task.app/Electrolux iOS Developer Task";
+			};
+			name = Debug;
+		};
+		C420F9A627FA675E00CB589C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876048463D2B3B2D9AC2EF96 /* Pods-Electrolux iOS Developer TaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAQNH4S28N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Application needs permission to write photos";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umairjihan.ios.Electrolux-iOS-Developer-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Electrolux iOS Developer Task.app/Electrolux iOS Developer Task";
+			};
+			name = Release;
+		};
+		C420F9A827FA675E00CB589C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A6DEE272E7E81004181533 /* Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAQNH4S28N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umairjihan.ios.Electrolux-iOS-Developer-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Electrolux iOS Developer Task";
+			};
+			name = Debug;
+		};
+		C420F9A927FA675E00CB589C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 236222D763761ED42C55C0C4 /* Pods-Electrolux iOS Developer Task-Electrolux iOS Developer TaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAQNH4S28N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umairjihan.ios.Electrolux-iOS-Developer-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Electrolux iOS Developer Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C420F97827FA675C00CB589C /* Build configuration list for PBXProject "Electrolux iOS Developer Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C420F99F27FA675E00CB589C /* Debug */,
+				C420F9A027FA675E00CB589C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C420F9A127FA675E00CB589C /* Build configuration list for PBXNativeTarget "Electrolux iOS Developer Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C420F9A227FA675E00CB589C /* Debug */,
+				C420F9A327FA675E00CB589C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C420F9A427FA675E00CB589C /* Build configuration list for PBXNativeTarget "Electrolux iOS Developer TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C420F9A527FA675E00CB589C /* Debug */,
+				C420F9A627FA675E00CB589C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C420F9A727FA675E00CB589C /* Build configuration list for PBXNativeTarget "Electrolux iOS Developer TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C420F9A827FA675E00CB589C /* Debug */,
+				C420F9A927FA675E00CB589C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C420F97527FA675C00CB589C /* Project object */;
+}
